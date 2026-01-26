@@ -1,0 +1,139 @@
+.footer {
+    position: relative;
+    margin-top: 100px;
+    background-color: #000;
+    min-height: 80vh;
+    padding: 1em 0 2em 0;
+}
+
+.footer__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url("/assets/images/joanna-kosinska-FxNjEkDJSxQ-unsplash.jpg");
+    background-attachment: fixed;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.footer__container {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer .title {
+    position: relative;
+    z-index: 2;
+    color: var(--light-accent);
+}
+
+.footer__contact {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact__item {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.contact__item .icon {
+    color: var(--main);
+}
+
+.contact__link {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.footer__form {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 0.5em;
+    margin-top: 4em;
+}
+
+.form__title {
+    text-align: center;
+    color: var(--main);
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-family: sans-serif;
+}
+
+.form__input {
+    padding: 0.75em;
+    border-radius: 0.25em;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.form__textarea {
+    padding: 0.75em;
+    border-radius: 0.25em;
+    border: 1px solid #ccc;
+    min-height: 5em;
+    font-size: 1em;
+    resize: none;
+    resize: none;
+}
+
+.form__textarea::placeholder {
+    font-size: 1.2em;
+}
+
+.form__button {
+    padding: 0.75em;
+    border-radius: 0.25em;
+    border: none;
+    background-color: var(--main);
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer__container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:854px) {
+    .footer .title {
+        width: 100%;
+        text-align: center
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__form {
+        width: 100%;
+    }
+
+}

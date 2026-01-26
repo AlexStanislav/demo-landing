@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Cormorant';
+    src: url('./Cormorant/Cormorant-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Italic';
+    src: url('./Cormorant/Cormorant-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}

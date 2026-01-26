@@ -1,0 +1,43 @@
+.about {
+    width: 60%;
+    margin: 0 auto;
+    min-height: 70vh;
+    position: relative;
+}
+.about__image {
+    width: 20vw;
+    position: absolute;
+}
+
+.about__image--left {
+    left: -50px;
+    top: 0;
+}
+
+.about__image--right {
+    right: -50px;
+    bottom: 0;
+}
+
+.about__text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1280px) {
+    .about {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .about__image--left {
+        top: 15vh;
+    }
+    .about__text {
+        width: 80%;
+        font-size: 1.2em;
+    }
+}
