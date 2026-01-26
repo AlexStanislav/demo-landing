@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luminara</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preload" href="./assets/images/sixteen-miles-out-bdVmIkx_gIs-unsplash.jpg" fetchpriority="high"
+        as="image" type="image/jpeg">
     <meta name="description" content="Luminara, handcrafted candles for your home">
     <meta name="keywords"
         content="candles, candle, candles for home, candles for candles, candles for candles for home">
@@ -14,15 +16,14 @@
 <body>
     <header class="header">
         <div class="logo" aria-label="logo">
-            <img class="logo__image" src="./assets/images/mingcute--candle-line.svg" alt="logo">
+            <img width="40" height="40" class="logo__image" src="./assets/images/mingcute--candle-line.svg" alt="logo">
             Luminara
         </div>
         <button class="header__button">
-            <img class="menu-icon" src="./assets/images/material-symbols--menu.svg" alt="navigation button">
+            <img width="30" height="30" class="menu-icon" src="./assets/images/material-symbols--menu.svg" alt="navigation button">
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <h2 class="nav__title">Menu</h2>
                 <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#candles">Candles</a></li>
                 <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
@@ -79,7 +80,7 @@
         <section id="candles" class="candles">
             <article class="candles__article">
                 <div class="candles__container">
-                    <img class="candles__image" src="./assets/images/rebecca-peterson-hall-aN-zGYlxiCI-unsplash.jpg"
+                    <img width="400" height="470" class="candles__image" src="./assets/images/rebecca-peterson-hall-aN-zGYlxiCI-unsplash.jpg"
                         alt="a hand holding a candle">
                     <div class="credit">
                         Photo by <a
@@ -95,7 +96,7 @@
             </article>
             <article class="candles__article">
                 <div class="candles__container">
-                    <img class="candles__image" src="./assets/images/sixteen-miles-out-iSyyY1GfYSw-unsplash.jpg"
+                    <img width="400" height="470" class="candles__image" src="./assets/images/sixteen-miles-out-iSyyY1GfYSw-unsplash.jpg"
                         alt="three candles">
                     <div class="credit">
                         Photo by <a
@@ -111,7 +112,7 @@
             </article>
             <article class="candles__article">
                 <div class="candles__container">
-                    <img class="candles__image" src="./assets/images/pratiksha-mohanty-hDTpVVEm6wg-unsplash.jpg"
+                    <img width="400" height="470" class="candles__image" src="./assets/images/pratiksha-mohanty-hDTpVVEm6wg-unsplash.jpg"
                         alt="jars of candles with a leaf in the middle">
                     <div class="credit">
                         Photo by <a
@@ -149,7 +150,7 @@
                         ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="process__container">
-                    <img class="process__image" src="./assets/images/kerin-gedge-Ch40touehNY-unsplash.jpg"
+                    <img width="400" height="400" class="process__image" src="./assets/images/kerin-gedge-Ch40touehNY-unsplash.jpg"
                         alt="a jar of candle wax">
                     <div class="credit">
                         Photo by <a
@@ -162,7 +163,7 @@
             </article>
             <article class="process__article">
                 <div class="process__container">
-                    <img class="process__image" src="./assets/images/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg"
+                    <img width="400" height="400" class="process__image" src="./assets/images/katherine-hanlon-bd_fCZhy_W8-unsplash.jpg"
                         alt="hand grinding on mortar and pestle">
                     <div class="credit">
                         Photo by <a
@@ -188,7 +189,7 @@
                         ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="process__container">
-                    <img class="process__image" src="./assets/images/mary-skrynnikova-wMaaDQJMauw-unsplash.jpg"
+                    <img width="400" height="400" class="process__image" src="./assets/images/mary-skrynnikova-wMaaDQJMauw-unsplash.jpg"
                         alt="three candles sitting on a white table">
                     <div class="credit">
                         Photo by <a
@@ -240,13 +241,14 @@
                 <input class="form__input" type="text" placeholder="First name">
                 <input class="form__input" type="text" placeholder="Last name">
                 <input class="form__input" type="email" placeholder="Email">
-                <select class="form__input">
-                    <optgroup label="Candle type">
+                <label class="form__field">
+                    <span class="form__label">Candle type</span>
+                    <select class="form__input">
                         <option value="mix">Fragrance mix</option>
                         <option value="wax">Organic mix</option>
                         <option value="other">Other</option>
-                    </optgroup>
-                </select>
+                    </select>
+                </label>
                 <textarea class="form__textarea" placeholder="Let us know how we can help"></textarea>
                 <button class="form__button">Send</button>
             </form>

@@ -140,6 +140,7 @@
         display: block;
         color: var(--main);
         font-family: 'Cormorant', serif;
+        font-display: swap;
         font-size: 2em;
         margin: 1em 0 0.25em 0;
     }
