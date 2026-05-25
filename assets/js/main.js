@@ -38,11 +38,10 @@ const buttonActions = {
     buttonActions.buttonGoTo("footer", null, "button__cta");
   },
   buttonGoTo: (section, buttonId, buttonClass = null) => {
-    const newUrl = `${window.location.href.replace(/\/[#\w]+$/g, "")}/#${section}`;
     if (buttonId) {
       const button = document.getElementById(buttonId);
       button.addEventListener("click", () => {
-        window.location.href = newUrl;
+        document.getElementById(section).scrollIntoView();
       });
     }
 
@@ -50,7 +49,7 @@ const buttonActions = {
       const buttons = document.getElementsByClassName(buttonClass);
       Array.from(buttons).forEach((button) => {
         button.addEventListener("click", () => {
-          window.location.href = newUrl;
+          document.getElementById(section).scrollIntoView();
         });
       });
     }
