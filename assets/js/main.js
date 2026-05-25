@@ -31,4 +31,31 @@ const menuActions = {
   },
 };
 
+const buttonActions = {
+  init: () => {
+    buttonActions.buttonGoTo("process", "button-info");
+    buttonActions.buttonGoTo("footer", "button-contact");
+    buttonActions.buttonGoTo("footer", null, "button__cta");
+  },
+  buttonGoTo: (section, buttonId, buttonClass = null) => {
+    const newUrl = `${window.location.href.replace(/\/[#\w]+$/g, "")}/#${section}`;
+    if (buttonId) {
+      const button = document.getElementById(buttonId);
+      button.addEventListener("click", () => {
+        window.location.href = newUrl;
+      });
+    }
+
+    if (buttonClass) {
+      const buttons = document.getElementsByClassName(buttonClass);
+      Array.from(buttons).forEach((button) => {
+        button.addEventListener("click", () => {
+          window.location.href = newUrl;
+        });
+      });
+    }
+  },
+};
+
 menuActions.init();
+buttonActions.init();
